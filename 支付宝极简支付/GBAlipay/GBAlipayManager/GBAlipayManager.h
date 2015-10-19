@@ -55,7 +55,22 @@
  }
  return YES;
  }
- *
+ * 8、iOS 9系统策略更新，限制了http协议的访问，此外应用需要在“Info.plist”中将要使用的URL Schemes列为白名单，才可正常检查其他应用是否安装。
+ *   在“Info.plist”里增加如下代码：
+ 
+ <key>LSApplicationQueriesSchemes</key>
+ <array>
+ <string>alipay</string>
+ <string>alipayshare</string>
+ </array>
+ 
+ <key>NSAppTransportSecurity</key>
+ <dict>
+ <key>NSAllowsArbitraryLoads</key>
+ <true/>
+ </dict>
+ *8、解决bitcode编译不过问题
+ *   在Build Setting将Enable Bitcode 设置为No
  */
 @interface GBAlipayManager : NSObject
 /**

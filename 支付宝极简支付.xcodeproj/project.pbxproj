@@ -431,6 +431,7 @@
 				TargetAttributes = {
 					842398561B15C52100BFB1D1 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 4PHWH595B3;
 					};
 					8423986F1B15C52100BFB1D1 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -621,6 +622,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/支付宝极简支付/Alipay",
@@ -640,6 +644,7 @@
 					"$(PROJECT_DIR)/支付宝极简支付/GBAlipay/Alipay",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "142c914c-7707-4b1c-8ed2-259810b3e998";
 			};
 			name = Debug;
 		};
@@ -647,6 +652,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/支付宝极简支付/Alipay",
@@ -666,6 +674,7 @@
 					"$(PROJECT_DIR)/支付宝极简支付/GBAlipay/Alipay",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "142c914c-7707-4b1c-8ed2-259810b3e998";
 			};
 			name = Release;
 		};

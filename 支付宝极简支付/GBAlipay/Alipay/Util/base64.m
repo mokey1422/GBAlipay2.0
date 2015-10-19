@@ -18,9 +18,6 @@
  *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 //#include "stdafx.h"
-
-#import <Foundation/Foundation.h>// 导入Foundation，防止某些类出现类似：“Cannot find interface declaration for 'NSObject', superclass of 'Base64'”的错误提示
-
 #include "config.h"
 
 #if defined(XYSSL_BASE64_C)

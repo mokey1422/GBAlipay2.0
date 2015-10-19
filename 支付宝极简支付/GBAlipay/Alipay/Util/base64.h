@@ -3,7 +3,7 @@
  */
 #ifndef XYSSL_BASE64_H
 #define XYSSL_BASE64_H
-
+#import <Foundation/Foundation.h>
 #define XYSSL_ERR_BASE64_INVALID_CHARACTER              -0x0012
 #define XYSSL_ERR_BASE64_BUFFER_TOO_SMALL               -0x0010
 
