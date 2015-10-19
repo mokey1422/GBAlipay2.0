@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840F17401BD4B76000C8AFE3 /* CUSFlashLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 840F173F1BD4B76000C8AFE3 /* CUSFlashLabel.m */; settings = {ASSET_TAGS = (); }; };
 		8423985D1B15C52100BFB1D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423985C1B15C52100BFB1D1 /* main.m */; };
 		842398601B15C52100BFB1D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423985F1B15C52100BFB1D1 /* AppDelegate.m */; };
 		842398631B15C52100BFB1D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842398621B15C52100BFB1D1 /* ViewController.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		840F173E1BD4B76000C8AFE3 /* CUSFlashLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUSFlashLabel.h; sourceTree = "<group>"; };
+		840F173F1BD4B76000C8AFE3 /* CUSFlashLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUSFlashLabel.m; sourceTree = "<group>"; };
 		842398571B15C52100BFB1D1 /* 支付宝极简支付.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "支付宝极简支付.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8423985B1B15C52100BFB1D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8423985C1B15C52100BFB1D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -135,8 +138,8 @@
 		84BE98BF1B1F2BA100ECDC89 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
 		84BE98C01B1F2BA100ECDC89 /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
 		84BE98C11B1F2BA100ECDC89 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
-		84BE98C21B1F2BA100ECDC89 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Order.h; path = ../Alipay/Order.h; sourceTree = "<group>"; };
-		84BE98C31B1F2BA100ECDC89 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Order.m; path = ../Alipay/Order.m; sourceTree = "<group>"; };
+		84BE98C21B1F2BA100ECDC89 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		84BE98C31B1F2BA100ECDC89 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
 		84BE98C51B1F2BA100ECDC89 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
 		84BE98C61B1F2BA100ECDC89 /* base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = base64.m; sourceTree = "<group>"; };
 		84BE98C71B1F2BA100ECDC89 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
@@ -206,6 +209,8 @@
 				84BE98701B1F2BA100ECDC89 /* GBAlipay */,
 				8423985E1B15C52100BFB1D1 /* AppDelegate.h */,
 				8423985F1B15C52100BFB1D1 /* AppDelegate.m */,
+				840F173E1BD4B76000C8AFE3 /* CUSFlashLabel.h */,
+				840F173F1BD4B76000C8AFE3 /* CUSFlashLabel.m */,
 				842398611B15C52100BFB1D1 /* ViewController.h */,
 				842398621B15C52100BFB1D1 /* ViewController.m */,
 				842398641B15C52100BFB1D1 /* Main.storyboard */,
@@ -254,6 +259,8 @@
 		84BE98711B1F2BA100ECDC89 /* Alipay */ = {
 			isa = PBXGroup;
 			children = (
+				84BE98C21B1F2BA100ECDC89 /* Order.h */,
+				84BE98C31B1F2BA100ECDC89 /* Order.m */,
 				84BE98721B1F2BA100ECDC89 /* AlipaySDK.bundle */,
 				84BE98731B1F2BA100ECDC89 /* AlipaySDK.framework */,
 				84BE98741B1F2BA100ECDC89 /* libcrypto.a */,
@@ -376,8 +383,6 @@
 				84BE98E41B1F2BD600ECDC89 /* GBAlipayManager.h */,
 				84BE98E51B1F2BD600ECDC89 /* GBAlipayManager.m */,
 				84BE98EA1B1F2C0400ECDC89 /* GBAlipayConfig.h */,
-				84BE98C21B1F2BA100ECDC89 /* Order.h */,
-				84BE98C31B1F2BA100ECDC89 /* Order.m */,
 			);
 			path = GBAlipayManager;
 			sourceTree = "<group>";
@@ -431,7 +436,7 @@
 				TargetAttributes = {
 					842398561B15C52100BFB1D1 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 4PHWH595B3;
+						DevelopmentTeam = AYY8UVXJA7;
 					};
 					8423986F1B15C52100BFB1D1 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -485,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BE98DC1B1F2BA100ECDC89 /* base64.m in Sources */,
+				840F17401BD4B76000C8AFE3 /* CUSFlashLabel.m in Sources */,
 				842398631B15C52100BFB1D1 /* ViewController.m in Sources */,
 				84BE98E01B1F2BA100ECDC89 /* NSDataEx.m in Sources */,
 				84BE98DF1B1F2BA100ECDC89 /* MD5DataSigner.m in Sources */,
@@ -644,7 +650,7 @@
 					"$(PROJECT_DIR)/支付宝极简支付/GBAlipay/Alipay",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "142c914c-7707-4b1c-8ed2-259810b3e998";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -674,7 +680,7 @@
 					"$(PROJECT_DIR)/支付宝极简支付/GBAlipay/Alipay",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "142c914c-7707-4b1c-8ed2-259810b3e998";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

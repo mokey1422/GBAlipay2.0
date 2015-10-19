@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "GBAlipayManager.h"
-
+#import "CUSFlashLabel.h"
 @interface ViewController ()
 
 @end
@@ -31,6 +31,16 @@
     
     [self.view addSubview:pay];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(dealAlipayResult:) name:@"alipayResult" object:nil];
+    CUSFlashLabel*label=[[CUSFlashLabel alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height/2-50, self.view.bounds.size.width, 100)];
+    label.text=@"请不要实际支付，支付前请替换你们公司的支付宝信息";
+    [label setContentMode:UIViewContentModeTop];
+    label.font=[UIFont boldSystemFontOfSize:15];
+    label.textAlignment=NSTextAlignmentCenter;
+    [label startAnimating];
+    [self.view addSubview:label];
+    
+    
+    
 }
 -(void)dealAlipayResult:(NSNotification*)notification{
     NSString*result=notification.object;

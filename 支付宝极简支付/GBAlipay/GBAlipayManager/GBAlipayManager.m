@@ -115,7 +115,7 @@
     
     // 获取私钥并将商户信息签名,外部商户可以根据情况存放私钥和签名,只需要遵循 RSA 签名规范, 并将签名字符串 base64 编码和 UrlEncode
     
-    id<DataSigner> signer = CreateRSADataSigner(PartnerPrivKey);
+    id<DataSigner> signer = CreateRSADataSigner(privateKey);
     NSString *signedString = [signer signString:orderSpec];
     
     //将签名成功字符串格式化为订单字符串,请严格按照该格式
